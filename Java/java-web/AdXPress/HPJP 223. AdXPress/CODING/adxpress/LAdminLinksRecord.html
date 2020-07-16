@@ -1,0 +1,110 @@
+<html>
+<head>
+<title>Links</title>
+
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="0"> 
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+</head>
+<body {PageBODY}>
+{Header}
+ <table>
+  <tr>
+   <td valign="top">
+   <!--BeginFormlink-->
+   <form method="POST" action="{FileName}" name="link">
+    <table {FormTABLE}>
+     <tr>
+      <td {FormHeaderTD} colspan="2"><font {FormHeaderFONT}>Link</font></td>
+     </tr>
+     <!--BeginlinkError-->
+     <tr>
+      <td {DataTD} colspan="2"><font {DataFONT}>{slinkErr}<font></td>
+     </tr>
+     <!--EndlinkError-->
+    
+     <tr>
+      <td {FieldCaptionTD}><font {FieldCaptionFONT}>Name*</font></td>
+      <td {DataTD}><input type="text" name="name" maxlength="50" value="{name}" size="50"></td>
+     </tr>
+     
+     <tr>
+      <td {FieldCaptionTD}><font {FieldCaptionFONT}>Category*</font></td>
+      <td {DataTD}><select name="category_id"><!--BeginLBcategory_id--><option value="{ID}" {Selected}>{Value}</option><!--EndLBcategory_id--></select></td>
+     </tr>
+     
+     <tr>
+      <td {FieldCaptionTD}><font {FieldCaptionFONT}>URL*</font></td>
+      <td {DataTD}><input type="text" name="event_url" maxlength="50" value="{event_url}" size="50"></td>
+     </tr>
+     
+     <tr>
+      <td {FieldCaptionTD}><font {FieldCaptionFONT}>Description</font></td>
+      <td {DataTD}><textarea name="description" cols="50" rows="5">{description}</textarea></td>
+     </tr>
+     
+     <tr>
+      <td {FieldCaptionTD}><font {FieldCaptionFONT}>Approved</font></td>
+      <td {DataTD}><input {approved_CHECKED} type="checkbox" name="approved"></td>
+     </tr>
+     
+     <tr>
+      <td {FieldCaptionTD}><font {FieldCaptionFONT}>Add Date</font></td>
+      <td {DataTD}><input type="text" name="add_date" maxlength="10" value="{add_date}" size="10"></td>
+     </tr>
+     
+     <tr>
+      <td colspan="2" align="right">
+
+      <!-- ***   Buttons   *** -->
+      
+      <!--BeginlinkInsert-->
+      <input type="hidden" value="insert" name="FormAction">
+      <input type="submit" value="Insert" onclick="document.link.FormAction.value = 'insert';">
+      <!--EndlinkInsert-->
+      
+      <!--BeginlinkEdit-->
+      <input type="hidden" value="update" name="FormAction"/>
+      
+      <!--BeginlinkUpdate-->
+      <input type="submit" value="Update" onclick="document.link.FormAction.value = 'update';"/>
+      <!--EndlinkUpdate-->
+      
+      <!--EndlinkDelete-->
+      <input type="submit" value="Delete" onclick="document.link.FormAction.value = 'delete';"/>
+      <!--EndlinkDelete-->
+      
+      <!--EndlinkEdit-->
+      
+      <!--BeginlinkCancel-->
+      <input type="submit" value="Cancel" onclick="document.link.FormAction.value = 'cancel';"/>
+      <!--EndlinkCancel-->
+      
+      <input type="hidden" name="FormName" value="link"/>
+      
+      <input type="hidden" name="PK_link_id" value="{PK_link_id}"/>
+      <input type="hidden" name="link_id" value="{link_id}"/>
+     </td>
+    </tr>
+   </table>
+  </form>
+<!--EndFormlink-->
+   <SCRIPT Language="JavaScript">
+if (document.forms["link"])
+document.link.onsubmit=delconf;
+function delconf() {
+if (document.link.FormAction.value == 'delete')
+  return confirm('Delete record?');
+}
+</SCRIPT>
+   </td>
+  </tr>
+ </table>
+
+
+{Footer}
+
+
+</body>
+</html>

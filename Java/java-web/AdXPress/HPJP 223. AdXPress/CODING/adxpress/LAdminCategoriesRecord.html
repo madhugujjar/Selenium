@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>Links</title>
+
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="0"> 
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+</head>
+<body {PageBODY}>
+{Header}
+ <table>
+  <tr>
+   <td valign="top">
+   <!--BeginFormcategories-->
+   <form method="POST" action="{FileName}" name="categories">
+    <table {FormTABLE}>
+     <tr>
+      <td {FormHeaderTD} colspan="2"><font {FormHeaderFONT}>Category</font></td>
+     </tr>
+     <!--BegincategoriesError-->
+     <tr>
+      <td {DataTD} colspan="2"><font {DataFONT}>{scategoriesErr}<font></td>
+     </tr>
+     <!--EndcategoriesError-->
+    
+     <tr>
+      <td {FieldCaptionTD}><font {FieldCaptionFONT}>Name</font></td>
+      <td {DataTD}><input type="text" name="category_desc" maxlength="50" value="{category_desc}" size="50"></td>
+     </tr>
+     
+     <tr>
+      <td {FieldCaptionTD}><font {FieldCaptionFONT}>Parent Category</font></td>
+      <td {DataTD}><select name="parent_category_id"><!--BeginLBparent_category_id--><option value="{ID}" {Selected}>{Value}</option><!--EndLBparent_category_id--></select></td>
+     </tr>
+     
+     <tr>
+      <td colspan="2" align="right">
+
+      <!-- ***   Buttons   *** -->
+      
+      <!--BegincategoriesInsert-->
+      <input type="hidden" value="insert" name="FormAction">
+      <input type="submit" value="Insert" onclick="document.categories.FormAction.value = 'insert';">
+      <!--EndcategoriesInsert-->
+      
+      <!--BegincategoriesEdit-->
+      <input type="hidden" value="update" name="FormAction"/>
+      
+      <!--BegincategoriesUpdate-->
+      <input type="submit" value="Update" onclick="document.categories.FormAction.value = 'update';"/>
+      <!--EndcategoriesUpdate-->
+      
+      <!--EndcategoriesDelete-->
+      <input type="submit" value="Delete" onclick="document.categories.FormAction.value = 'delete';"/>
+      <!--EndcategoriesDelete-->
+      
+      <!--EndcategoriesEdit-->
+      
+      <!--BegincategoriesCancel-->
+      <input type="submit" value="Cancel" onclick="document.categories.FormAction.value = 'cancel';"/>
+      <!--EndcategoriesCancel-->
+      
+      <input type="hidden" name="FormName" value="categories"/>
+      
+      <input type="hidden" name="Trn_cat_id" value="{Trn_cat_id}"/>
+      <input type="hidden" name="Trn_category_id" value="{Trn_category_id}"/>
+      <input type="hidden" name="PK_category_id" value="{PK_category_id}"/>
+      <input type="hidden" name="category_id" value="{category_id}"/>
+     </td>
+    </tr>
+   </table>
+  </form>
+<!--EndFormcategories-->
+   <SCRIPT Language="JavaScript">
+if (document.forms["categories"])
+document.categories.onsubmit=delconf;
+function delconf() {
+if (document.categories.FormAction.value == 'delete')
+  return confirm('Delete record?');
+}
+</SCRIPT>
+   </td>
+  </tr>
+ </table>
+
+
+{Footer}
+
+
+</body>
+</html>

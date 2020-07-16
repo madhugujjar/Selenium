@@ -1,0 +1,37 @@
+if we make a class as final it cant be inherited
+if we make a method as final it cant be overridden
+if we make a field as final it cant be changed it is called constant
+final veriable have to be intitalised then and there itself 
+
+u cant create and object of and interface so Interface cant have instance variables. Interface is also a class
+
+Instance variables canbe accessed by creating objects(instance of it)
+
+if u want to access a variable without creating object of it, is called static variable
+
+A variable inside an Interface by default is public static final(even if u remove this public static final ) its default
+ex:public static final int i=50;
+
+finally{} is a block which can be executed if the exception occurs or not
+but it should have a try{} block
+
+finalize() is a method which can be excuted before it is garbage collected
+
+if a overriden method is there it should not throw a extra exeception are in the 
+super class
+the overridden method in subclass may or may not throw exception which is in super class
+
+if super class constractor is throwing an exception the sub class should throw an exception. subclass cannot handle it through try catch block
+
+difference between Exception and Errors
+when exception occurs we can handle it, but when errors occur we cant handle it
+
+Errors are not due to our programm but it is on what the envirnoment it is running
+
+if i want to allocate some memory to my program i can give the minimum and maximum size
+xms stand for initial Heep-size
+java -Xms256m  -Xms1024 com.accenture.x
+
+if you want to write primitive data types in a file u cannot write it with BufferedoutputStream there is another object called PrintStream
+
+

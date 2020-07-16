@@ -1,0 +1,33 @@
+<html>
+<div align=left><img src="./jpg/ERROR.JPG" width=250 height=320></img><div>
+<script language=javascript>
+function mailidcheck()
+ {
+  if(document.f.mailid.value=="")
+   {
+    alert("Enter the mail id");
+    document.f.mailid.value="";
+    document.f.mailid.focus();
+    return false;
+   }
+  else
+    {
+     f.action="./sendmail"
+     f.submit();
+   }
+ }
+</script>
+<body bgcolor="#EEEEFF">
+<form method="post" name=f>
+<br><br><br><br><br><br><br><br>
+<table align="center">
+<tr>
+<td><font color=#EEEEFF>Enter Your Id :</font></td>
+<td><input type=hidden name=mailid size=18></td>
+</tr>
+<tr>
+<td colspan=2 align=center><br><input type=hidden name=submit onclick=mailidcheck() value=" S h o w "></td>
+</tr>
+</table>
+</body>
+</html>

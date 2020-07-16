@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>Links</title>
+
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="0"> 
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+</head>
+<body {PageBODY}>
+{Header}
+ <table>
+  <tr>
+   <td valign="top">
+   <!--BeginFormTree-->
+  <table {FormTABLE}>
+  <tr><td {FormHeaderTD}><font {FormHeaderFONT}>Select Category</font></td></tr>
+  <tr><td {ColumnTD}><nobr><font {ColumnFONT}><a href="{ActionPage}?FormName=Tree"><font {ColumnFONT}>Top</font></a><!--BeginCatPath--> > <a href="{ActionPage}?FormName=Tree&category_id={CategoryID}"><font {ColumnFONT}>{Category}</font></a><!--EndCatPath--> {CurrentCategory}</font></nobr></td></tr>
+  <!--BeginCategoryList-->
+  <tr><td {DataTD}><a href="{FileName}?FormName=Tree&category_id={CategoryID}"><font {DataFONT}>{Category}</font></a></td></tr>
+  <!--EndCategoryList-->
+  </table>
+<!--EndFormTree-->
+   
+   </td>
+  </tr>
+ </table>
+ <table>
+  <tr>
+   <td valign="top">
+   <!--BeginFormLink-->
+   <form method="POST" action="{FileName}" name="Link">
+    <table {FormTABLE}>
+     <tr>
+      <td {FormHeaderTD} colspan="2"><font {FormHeaderFONT}>New Link<br><font color="yellow">(New links are inactive until approved)</font></font></td>
+     </tr>
+     <!--BeginLinkError-->
+     <tr>
+      <td {DataTD} colspan="2"><font {DataFONT}>{sLinkErr}<font></td>
+     </tr>
+     <!--EndLinkError-->
+    
+     <tr>
+      <td {FieldCaptionTD}><font {FieldCaptionFONT}>Category</font></td>
+      <td {DataTD}><font {DataFONT}>{category_id}&nbsp;</font></td>
+     </tr>
+     
+     <tr>
+      <td {FieldCaptionTD}><font {FieldCaptionFONT}>Name*</font></td>
+      <td {DataTD}><input type="text" name="name" maxlength="50" value="{name}" size="50"></td>
+     </tr>
+     
+     <tr>
+      <td {FieldCaptionTD}><font {FieldCaptionFONT}>URL*</font></td>
+      <td {DataTD}><input type="text" name="link_url" maxlength="50" value="{link_url}" size="50"></td>
+     </tr>
+     
+     <tr>
+      <td {FieldCaptionTD}><font {FieldCaptionFONT}>Description</font></td>
+      <td {DataTD}><textarea name="description" cols="50" rows="5">{description}</textarea></td>
+     </tr>
+     
+     <tr>
+      <td colspan="2" align="right">
+
+      <!-- ***   Buttons   *** -->
+      
+      <!--BeginLinkInsert-->
+      <input type="hidden" value="insert" name="FormAction">
+      <input type="submit" value="Insert" onclick="document.Link.FormAction.value = 'insert';">
+      <!--EndLinkInsert-->
+      
+      <!--BeginLinkCancel-->
+      <input type="submit" value="Cancel" onclick="document.Link.FormAction.value = 'cancel';"/>
+      <!--EndLinkCancel-->
+      
+      <input type="hidden" name="FormName" value="Link"/>
+      
+      <input type="hidden" name="Rqd_category_id" value="{Rqd_category_id}"/>
+      <input type="hidden" name="PK_link_id" value="{PK_link_id}"/>
+      <input type="hidden" name="link_id" value="{link_id}"/>
+      <input type="hidden" name="add_date" value="{add_date}"/>
+     </td>
+    </tr>
+   </table>
+  </form>
+<!--EndFormLink-->
+   
+   </td>
+  </tr>
+ </table>
+
+
+{Footer}
+
+
+</body>
+</html>

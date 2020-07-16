@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Links</title>
+
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="0"> 
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+</head>
+<body {PageBODY}>
+{Header}
+ <table>
+  <tr>
+   <td valign="top">
+   <!--BeginFormUsers--><table {FormTABLE}>
+     <tr>
+      <td {FormHeaderTD} colspan="3"><a name="Users"><font {FormHeaderFONT}>Users</font></a></td>
+     </tr>
+     <tr>
+       <td {ColumnTD}><a href="{FileName}?{FormParams}FormUsers_Sorting=1&FormUsers_Sorted={Form_Sorting}&"><font {ColumnFONT}>User Login</font></a></td>
+       <td {ColumnTD}><a href="{FileName}?{FormParams}FormUsers_Sorting=2&FormUsers_Sorted={Form_Sorting}&"><font {ColumnFONT}>Name</font></a></td>
+       <td {ColumnTD}><a href="{FileName}?{FormParams}FormUsers_Sorting=3&FormUsers_Sorted={Form_Sorting}&"><font {ColumnFONT}>Level</font></a></td>
+     </tr>
+     <!--BeginDListUsers-->
+     <tr>
+      <td {DataTD}><a href="{member_login_URLLink}?member_id={Prm_member_id}&{TransitParams}"><font {DataFONT}>{member_login}</font></a>&nbsp;</td>
+      <td {DataTD}><font {DataFONT}>{name}&nbsp;</font></td>
+      <td {DataTD}><font {DataFONT}>{member_level}&nbsp;</font></td>
+     </tr>
+     <!--EndDListUsers--> 
+     <!--BeginUsersNoRecords-->
+     <tr><td colspan="3" {DataTD}><font {DataFONT}>No records</font></td></tr>
+     <!--EndUsersNoRecords--> 
+     <tr>
+      <td colspan="3" {ColumnTD}>
+       <font {ColumnFONT}>
+       
+        <a href="{FormAction}?{TransitParams}"><font {ColumnFONT}>Insert</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <!--BeginUsersScroller-->
+        <a href{UsersScrollerPrevSwitch}="{FileName}?{FormParams}{SortParams}FormUsers_Page={PrevPage}#Users"><font {ColumnFONT}>Previous</font></a>
+        [ {UsersCurrentPage} ]
+        <a href{UsersScrollerNextSwitch}="{FileName}?{FormParams}{SortParams}FormUsers_Page={NextPage}#Users"><font {ColumnFONT}>Next</font></a>
+        <!--EndUsersScroller-->
+       </font>
+      </td>
+     </tr>
+    </table>
+   <!--EndFormUsers-->
+   
+   </td>
+  </tr>
+ </table>
+
+
+{Footer}
+
+
+</body>
+</html>

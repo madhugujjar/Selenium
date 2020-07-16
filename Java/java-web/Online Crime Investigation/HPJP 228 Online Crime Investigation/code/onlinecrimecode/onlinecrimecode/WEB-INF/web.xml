@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+<servlet>
+     <servlet-name>CustRegistration</servlet-name>
+	  <servlet-class>CustRegister</servlet-class>
+	  </servlet>
+	  <servlet-mapping>
+		<servlet-name>CustRegistration</servlet-name>
+		<url-pattern>/Register</url-pattern>
+	  </servlet-mapping>
+
+	<servlet>
+	  
+	       <servlet-name>UpdateCustomer</servlet-name>
+	  <servlet-class>UpdateCustomer</servlet-class>
+	  </servlet>
+	  <servlet-mapping>
+		<servlet-name>UpdateCustomer</servlet-name>
+		<url-pattern>/UpdateCustomer</url-pattern>
+	  </servlet-mapping>
+	  
+	  
+<servlet>
+   <servlet-name>ValidateUser</servlet-name>
+   <servlet-class>CheckUser</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>ValidateUser</servlet-name>
+	<url-pattern>/CheckUser</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+   <servlet-name>CheckCustomer1</servlet-name>
+   <servlet-class>CheckCustomer1</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>CheckCustomer1</servlet-name>
+	<url-pattern>/CheckCustomer1</url-pattern>
+</servlet-mapping>
+
+
+
+
+
+<servlet>
+   <servlet-name>CheckCustomer</servlet-name>
+   <servlet-class>CheckCustomer</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>CheckCustomer</servlet-name>
+	<url-pattern>/CheckCustomer</url-pattern>
+</servlet-mapping>
+
+
+
+
+<servlet>
+   <servlet-name>CheckDept</servlet-name>
+   <servlet-class>CheckDept</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>CheckDept</servlet-name>
+	<url-pattern>/CheckDept</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+   <servlet-name>CheckDept1</servlet-name>
+   <servlet-class>CheckDept1</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>CheckDept1</servlet-name>
+	<url-pattern>/CheckDept1</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+   <servlet-name>DeptRegister</servlet-name>
+   <servlet-class>DeptRegister</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>DeptRegister</servlet-name>
+	<url-pattern>/DeptRegister</url-pattern>
+</servlet-mapping>
+
+
+
+
+<servlet>
+   <servlet-name>CustomerCheck</servlet-name>
+   <servlet-class>Login</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>CustomerCheck</servlet-name>
+	<url-pattern>/UserLogin</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+   <servlet-name>LoginCheck</servlet-name>
+   <servlet-class>LoginCheck</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>LoginCheck</servlet-name>
+	<url-pattern>/LoginCheck</url-pattern>
+</servlet-mapping>
+
+<servlet>
+   <servlet-name>AdminRegister</servlet-name>
+   <servlet-class>AdminRegister</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>AdminRegister</servlet-name>
+	<url-pattern>/AdminReg</url-pattern>
+</servlet-mapping>
+
+<servlet>
+   <servlet-name>AdminLogin</servlet-name>
+   <servlet-class>AdminLogin</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>AdminLogin</servlet-name>
+	<url-pattern>/AdminLogin</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+   <servlet-name>ThRegister</servlet-name>
+   <servlet-class>ThieveRegistration</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ThRegister</servlet-name>
+	<url-pattern>/ThRegister</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+   <servlet-name>UpdateDept</servlet-name>
+   <servlet-class>UpdateDeptDetails </servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>UpdateDept</servlet-name>
+	<url-pattern>/UpdateDept</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+   <servlet-name>UpdateThief</servlet-name>
+   <servlet-class>Updatethefe</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>UpdateThief</servlet-name>
+	<url-pattern>/UpdateThieve</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+   <servlet-name>UpdateThieve</servlet-name>
+   <servlet-class>UpdateThieve</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>UpdateThieve</servlet-name>
+	<url-pattern>/UpdateThieve1</url-pattern>
+</servlet-mapping>
+
+
+
+
+<servlet>
+   <servlet-name>SaveCaution</servlet-name>
+   <servlet-class>SaveCaution</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>SaveCaution</servlet-name>
+	<url-pattern>/SaveCaution</url-pattern>
+</servlet-mapping>
+
+<welcome-file-list>
+   <welcome-file>HomePage.jsp</welcome-file>
+</welcome-file-list>
+
+</web-app>

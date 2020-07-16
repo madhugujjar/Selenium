@@ -1,0 +1,91 @@
+<html>
+<head>
+<title>Links</title>
+
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="0"> 
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+</head>
+<body {PageBODY}>
+{Header}
+ <table>
+  <tr>
+   <td valign="top">
+   <!--BeginFormSearch--><form method="GET" action="{ActionPage}" name="Search">
+    <table {FormTABLE}>
+     <tr>
+      <td {FormHeaderTD}  colspan="3"><a name="Search"><font {FormHeaderFONT}>Search</font></a></td>
+     </tr>
+     <tr>
+      <td {FieldCaptionTD}><font {FieldCaptionFONT}>Name</font></td>
+      <td {DataTD}><input type="text" name="category_desc" maxlength="50" value="{category_desc}" size="20"></td>
+      <td><input type="submit" value="Search"></td>
+     </tr>
+    </table>
+    </form><!--EndFormSearch-->
+   
+   </td>
+  </tr>
+ </table>
+ <table>
+  <tr>
+   <td valign="top">
+   <!--BeginFormTree-->
+  <table {FormTABLE}>
+  <tr><td {FormHeaderTD}><font {FormHeaderFONT}>Tree</font></td></tr>
+  <tr><td {ColumnTD}><nobr><font {ColumnFONT}><a href="{ActionPage}?FormName=Tree"><font {ColumnFONT}>Top</font></a><!--BeginCatPath--> > <a href="{ActionPage}?FormName=Tree&category_id={CategoryID}"><font {ColumnFONT}>{Category}</font></a><!--EndCatPath--> {CurrentCategory}</font></nobr></td></tr>
+  <!--BeginCategoryList-->
+  <tr><td {DataTD}><a href="{FileName}?FormName=Tree&category_id={CategoryID}"><font {DataFONT}>{Category}</font></a></td></tr>
+  <!--EndCategoryList-->
+  </table>
+<!--EndFormTree-->
+   
+   </td>
+  </tr>
+ </table>
+ <table>
+  <tr>
+   <td valign="top">
+   <!--BeginFormcategories--><table {FormTABLE}>
+     <tr>
+      <td {FormHeaderTD} colspan="1"><a name="categories"><font {FormHeaderFONT}>Categories</font></a></td>
+     </tr>
+     <tr>
+       <td {ColumnTD}><a href="{FileName}?{FormParams}Formcategories_Sorting=1&Formcategories_Sorted={Form_Sorting}&"><font {ColumnFONT}>Name</font></a></td>
+     </tr>
+     <!--BeginDListcategories-->
+     <tr>
+      <td {DataTD}><a href="{category_desc_URLLink}?cat_id={Prm_cat_id}&{TransitParams}"><font {DataFONT}>{category_desc}</font></a>&nbsp;</td>
+     </tr>
+     <!--EndDListcategories--> 
+     <!--BegincategoriesNoRecords-->
+     <tr><td colspan="1" {DataTD}><font {DataFONT}>No records</font></td></tr>
+     <!--EndcategoriesNoRecords--> 
+     <tr>
+      <td colspan="1" {ColumnTD}>
+       <font {ColumnFONT}>
+       
+        <a href="{FormAction}?{TransitParams}"><font {ColumnFONT}>Insert</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <!--BegincategoriesScroller-->
+        <a href{categoriesScrollerPrevSwitch}="{FileName}?{FormParams}{SortParams}Formcategories_Page={PrevPage}#categories"><font {ColumnFONT}>Previous</font></a>
+        [ {categoriesCurrentPage} ]
+        <a href{categoriesScrollerNextSwitch}="{FileName}?{FormParams}{SortParams}Formcategories_Page={NextPage}#categories"><font {ColumnFONT}>Next</font></a>
+        <!--EndcategoriesScroller-->
+       </font>
+      </td>
+     </tr>
+    </table>
+   <!--EndFormcategories-->
+   
+   </td>
+  </tr>
+ </table>
+
+
+{Footer}
+
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>Links</title>
+
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="0"> 
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+</head>
+<body {PageBODY}>
+{Header}
+ <table>
+  <tr>
+   <td valign="top">
+   <!--BeginFormTree-->
+  <table {FormTABLE}>
+  <tr><td {FormHeaderTD}><font {FormHeaderFONT}>Categories</font></td></tr>
+  <tr><td {ColumnTD}><nobr><font {ColumnFONT}><a href="{ActionPage}?FormName=Tree"><font {ColumnFONT}>Top</font></a><!--BeginCatPath--> > <a href="{ActionPage}?FormName=Tree&category_id={CategoryID}"><font {ColumnFONT}>{Category}</font></a><!--EndCatPath--> {CurrentCategory}</font></nobr></td></tr>
+  <!--BeginCategoryList-->
+  <tr><td {DataTD}><a href="{FileName}?FormName=Tree&category_id={CategoryID}"><font {DataFONT}>{Category}</font></a></td></tr>
+  <!--EndCategoryList-->
+  </table>
+<!--EndFormTree-->
+   
+   </td>
+   <td valign="top">
+   <!--BeginFormSearch--><form method="GET" action="{ActionPage}" name="Search">
+    <table {FormTABLE}>
+     <tr>
+      <td {FormHeaderTD} colspan="2"><a name="Search"><font {FormHeaderFONT}>Search</font></a></td>
+     </tr>
+     <tr>
+      <td {FieldCaptionTD}><font {FieldCaptionFONT}>Description</font></td>
+      <td {DataTD}><input type="text" name="description" maxlength="20" value="{description}" size="20"></td>
+     </tr>
+     <tr>
+      <td align="right" colspan="3"><input type="submit" value="Find"></td>
+     </tr>
+    </table>
+    </form><!--EndFormSearch-->
+   
+   </td>
+  </tr>
+ </table>
+ <table>
+  <tr>
+   <td valign="top">
+   <!--BeginFormItems--><table {FormTABLE}>
+     <tr>
+      <td {FormHeaderTD} colspan="4"><a name="Items"><font {FormHeaderFONT}>Items</font></a></td>
+     </tr>
+     <tr>
+       <td {ColumnTD}><a href="{FileName}?{FormParams}FormItems_Sorting=1&FormItems_Sorted={Form_Sorting}&"><font {ColumnFONT}>Name</font></a></td>
+       <td {ColumnTD}><a href="{FileName}?{FormParams}FormItems_Sorting=2&FormItems_Sorted={Form_Sorting}&"><font {ColumnFONT}>URL</font></a></td>
+       <td {ColumnTD}><a href="{FileName}?{FormParams}FormItems_Sorting=3&FormItems_Sorted={Form_Sorting}&"><font {ColumnFONT}>Category</font></a></td>
+       <td {ColumnTD}><a href="{FileName}?{FormParams}FormItems_Sorting=4&FormItems_Sorted={Form_Sorting}&"><font {ColumnFONT}>Description</font></a></td>
+     </tr>
+     <!--BeginDListItems-->
+     <tr>
+      <td {DataTD}><font {DataFONT}>{name}&nbsp;</font></td>
+      <td {DataTD}><a href="{event_url_URLLink}"><font {DataFONT}>{event_url}</font></a>&nbsp;</td>
+      <td {DataTD}><font {DataFONT}>{category_id}&nbsp;</font></td>
+      <td {DataTD}><font {DataFONT}>{description}&nbsp;</font></td>
+     </tr>
+     <!--EndDListItems--> 
+     <!--BeginItemsNoRecords-->
+     <tr><td colspan="4" {DataTD}><font {DataFONT}>No records</font></td></tr>
+     <!--EndItemsNoRecords--> 
+     <tr>
+      <td colspan="4" {ColumnTD}>
+       <font {ColumnFONT}>
+       
+        <a href="{FormAction}?{TransitParams}"><font {ColumnFONT}>Add new link (Subject to approval)</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <!--BeginItemsScroller-->
+        <a href{ItemsScrollerPrevSwitch}="{FileName}?{FormParams}{SortParams}FormItems_Page={PrevPage}#Items"><font {ColumnFONT}>Previous</font></a>
+        [ {ItemsCurrentPage} ]
+        <a href{ItemsScrollerNextSwitch}="{FileName}?{FormParams}{SortParams}FormItems_Page={NextPage}#Items"><font {ColumnFONT}>Next</font></a>
+        <!--EndItemsScroller-->
+       </font>
+      </td>
+     </tr>
+    </table>
+   <!--EndFormItems-->
+   
+   </td>
+  </tr>
+ </table>
+
+
+{Footer}
+
+
+</body>
+</html>

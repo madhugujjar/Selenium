@@ -1,0 +1,279 @@
+a:link {  color: #FFFFFF; text-decoration: underline}
+a:visited {  color: #FFFFFF; text-decoration: underline}
+a:hover {  color: #FFFFFF; text-decoration: none}
+
+
+        
+TH 
+{
+    font-family: Arial;
+    font-size: 10pt;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #003366;
+}  
+
+.likeTH
+{
+    font-family: Arial;
+    font-size: 10pt;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #003366;
+}       
+ 
+ .price_text{color:white;font-weight:bold;font-size:12pt;}
+
+TD 
+{
+    font-family: Arial;
+    font-size: 10pt;
+}
+
+.tableBorder
+{
+	background-color: #003366;
+}
+
+.tableBorderGrey
+{
+	background-color: #cccccc;
+}
+.tableBorderGrey1
+{
+	background-color: #888888;
+}
+.header
+{
+	background-color: #003366;
+    font-family: Arial;
+    font-size: 18pt;
+	text-align: left;
+	color: #ffffff;
+	font-weight: bold;
+	padding-left: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.smallheader
+{
+	background-color: #003366;
+    font-family: Arial;
+    font-size: 14pt;
+	text-align: left;
+	color: #ffffff;
+	font-weight: bold;
+	padding-left: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.login
+{
+    font-family: Arial;
+	font-weight: bold;
+	text-align: right;
+	padding-right: 10px;
+}
+
+.input
+{
+    text-align: left;
+}
+
+.submit
+{
+    padding-bottom: 5px;
+}
+
+.secondaryContent
+{
+    font-family: Arial;
+    font-size: 10pt;
+    
+}
+
+
+.secondaryContentB
+{
+    font-family: Arial;
+    font-size: 10pt;
+	font-weight: bold;
+}
+
+.secondaryContentBlueB
+{
+    font-family: Arial;
+    font-size: 10pt;
+	color: #003366;
+	font-weight: bold;
+}
+
+.secondaryContentRedB
+{
+    font-family: Arial;
+    font-size: 13pt;
+	color: #990000;
+	font-weight: bold;
+}
+
+.secondaryContentRedBPush
+{
+    font-family: Arial;
+    font-size: 13pt;
+	color: #990000;
+	font-weight: bold;
+	padding-left: 25px;
+}
+
+.question
+{
+	font-weight: bold;
+}
+
+.altRow
+{
+	background-color: white;
+}
+
+.altRowY
+{
+	background-color: #FFFFCC;
+}
+
+.sumHeader
+{ 
+        font-family:Verdana,Arial,Helvetica;
+	font-weight: bold;
+	text-align: center;
+	font-size:8pt;
+}
+
+.resultCenter
+{
+	text-align: center;
+	font-family:Verdana,Arial,Helvetica;
+	font-size:8pt;
+}
+
+.inputLabelBold
+{
+	font-family:Verdana,Arial,Helvetica;
+	font-size:8pt;
+	font-weight: bold;
+}
+
+.inputLabelNormal
+{
+	font-family:Verdana,Arial,Helvetica;
+	font-size:8pt;
+}
+
+.inputData
+{
+	font-family:Verdana,Arial,Helvetica;
+	font-size:8pt;
+}
+
+.inputDataBold
+{
+	font-family:Verdana,Arial,Helvetica;
+	font-size:8pt;
+	font-weight: bold;
+}
+
+.inputDataBig
+{
+	font-family:Verdana,Arial,Helvetica;
+	font-size:9pt;
+}
+
+.yes
+{
+	font-weight: bold;
+	text-align: center;	
+	color: green;
+}
+
+.no
+{
+	font-weight: bold;
+	text-align: center;	
+	color: red;
+}
+
+FORM
+{
+   margin           : 0px 0px 0px 0px;
+}
+
+INPUT, SELECT, TEXTAREA
+{
+   color            : #115E94;
+   font-family      : Tahoma;
+   font-size        : x-small;
+   border-width     : 1px;
+   border-style     : solid;
+   border-color     : #7EB0C9;
+}
+INPUT.fullWidth, TEXTAREA.fullWidth, SELECT.fullWidth
+{
+   /* for some reason, 100% will truncate right edge */
+   width            : 95%;
+}
+
+INPUT.checkbox, INPUT.radio, INPUT.image
+{
+   border-style     : none;
+}
+
+INPUT.submit
+{
+   border-left      : 1px solid #FFFFFF;
+   border-top       : 1px solid #FFFFFF;
+   border-right     : 1px solid #387199;
+   border-bottom    : 1px solid #387199;
+   background-color : #E5EEF3;
+}
+.pageHeader{ /*top header for each page*/
+    COLOR: #003366;
+    FONT-FAMILY: Arial;
+    FONT-SIZE: 12pt;
+    FONT-WEIGHT: bold;
+}
+.subNav 
+{
+    BACKGROUND: #6BB3FF;
+    FONT-FAMILY: Arial,Sans-Serif;
+    FONT-SIZE: 9pt;
+    FONT-STYLE: normal;
+    FONT-WEIGHT: bold;
+    COLOR: #004D00;
+    PADDING-LEFT: 13px;
+}
+.subNav A:LINK 
+{
+    COLOR: #004D00;
+    TEXT-DECORATION: none;
+}
+
+.subNav A:VISITED 
+{
+    COLOR: #004D00;
+    TEXT-DECORATION: none;
+}
+
+.subNav A:HOVER 
+{
+    COLOR: #000000;
+    TEXT-DECORATION: none;
+}
+.reportHeader
+{
+	font-family:Verdana,Arial,Helvetica;
+	font-size:8pt;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+}

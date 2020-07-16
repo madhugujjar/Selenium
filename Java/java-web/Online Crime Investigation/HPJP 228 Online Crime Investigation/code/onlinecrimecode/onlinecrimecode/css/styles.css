@@ -1,0 +1,163 @@
+
+
+
+
+
+
+INPUT, SELECT,TEXTAREA
+{
+   color            : #000066;
+   font-family      : Tahoma;
+   font-size        : x-small;
+   border-width     : 1px;
+   border-style     : solid;
+   border-color     : ##000066;
+}
+<style>
+
+a
+{
+           color:black;
+           text-decoration:none;
+}
+a:hover
+{
+            color:black;
+            text-decoration:underline;
+
+
+
+
+}
+</style>
+
+
+INPUT.fullWidth, TEXTAREA.fullWidth, SELECT.fullWidth
+{
+   /* for some reason, 100% will truncate right edge */
+   width            : 100%;
+}
+
+.topPage {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: url(Img/fBg.png) #000066; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+.rightPage {
+	MARGIN: 20px
+}
+.leftPage {
+	BACKGROUND: #dcebff
+}
+.title {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0pt; BACKGROUND: #000066; VISIBILITY: visible; PADDING-BOTTOM: 0px; MARGIN: auto; VERTICAL-ALIGN: middle; WIDTH: 100%; LINE-HEIGHT: 52px; PADDING-TOP: 0px; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif; HEIGHT: 52px
+}
+.title1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 16pt; FLOAT: left; VISIBILITY: visible;  COLOR:#6666CC; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+.separator1 {
+	DISPLAY: block; FONT-SIZE: 5pt; BACKGROUND: #ffffff; LEFT: 6px; FLOAT: left; VISIBILITY: visible; MARGIN-LEFT: 6px; VERTICAL-ALIGN: middle; WIDTH: 10pt; COLOR: #ffffff; LINE-HEIGHT: 3px; MARGIN-RIGHT: 6px; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif; POSITION: relative; TOP: 26px; HEIGHT: 3px
+}
+.title2 {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 10px; FONT-WEIGHT: normal; FONT-SIZE: 16pt; FLOAT: left; VISIBILITY: visible; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: middle; COLOR: #ffffff; LINE-HEIGHT: 52px; PADDING-TOP: 0px; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+.separator2 {
+	DISPLAY: none; FONT-SIZE: 20pt; FLOAT: left; VISIBILITY: visible; VERTICAL-ALIGN: middle; WIDTH: 20pt; COLOR: #ffffff; LINE-HEIGHT: 52px; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+.titleimage {
+	PADDING-RIGHT: 10px; VISIBILITY: visible; COLOR: #ffffff; LINE-HEIGHT: 20px; POSITION: relative; TOP: 6pt; TEXT-ALIGN: right
+}
+.topMenu {
+	PADDING-RIGHT: 0pt; BORDER-TOP: white 1px solid; DISPLAY: block; PADDING-LEFT: 0pt; BACKGROUND: url(Img/A04.png); PADDING-BOTTOM: 0pt; MARGIN: 0pt; WIDTH: 100%; LINE-HEIGHT: 22px; PADDING-TOP: 0pt; BORDER-BOTTOM: black 1px solid
+}
+.topMenu A {
+	PADDING-RIGHT: 6pt; DISPLAY: block; PADDING-LEFT: 6pt; FONT-SIZE: 8pt; BACKGROUND: url(Img/A04.png); VERTICAL-ALIGN: middle; COLOR: white; LINE-HEIGHT: 22px; WHITE-SPACE: nowrap; HEIGHT: 22px; TEXT-DECORATION: none
+}
+.topMenu A:hover {
+	DISPLAY: block; BACKGROUND: url(Img/A04.png); LINE-HEIGHT: 22px; HEIGHT: 22px; TEXT-DECORATION: underline
+}
+.selected {
+	PADDING-RIGHT: 6pt; DISPLAY: block; PADDING-LEFT: 6pt; FONT-SIZE: 8pt; BACKGROUND: url(Img/A02.png); MARGIN: 0pt; COLOR: white; LINE-HEIGHT: 22px; WHITE-SPACE: nowrap
+}
+.bookmark {
+	FONT-WEIGHT: normal; FONT-SIZE: 8pt; VISIBILITY: visible; WIDTH: 100%; PADDING-TOP: 14px; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif; TEXT-ALIGN: left
+}
+.bookmark A {
+	PADDING-RIGHT: 2px; DISPLAY: block; PADDING-LEFT: 17px; FONT-WEIGHT: normal; FONT-SIZE: 8pt; VISIBILITY: visible; PADDING-BOTTOM: 2px; WIDTH: 100%; COLOR: #333333; LINE-HEIGHT: 12px; PADDING-TOP: 2px; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif; HEIGHT: 12px; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+.bookmark A:link {
+	
+}
+.bookmark A:visited {
+	
+}
+.bookmark A:active {
+	
+}
+.bookmark A:hover {
+	FONT-WEIGHT: bold; COLOR: #000000
+}
+.caption1 {
+	MARGIN-TOP: 14px; FONT-WEIGHT: bold; FONT-SIZE: 15pt; BACKGROUND: #227CA8; VISIBILITY: visible; PADDING-BOTTOM: 1px; COLOR: #ffffff; LINE-HEIGHT: 20px; PADDING-TOP: 1px; BORDER-BOTTOM: #333333 1pt solid; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif; TEXT-ALIGN: center
+}
+.width770 {
+	WIDTH: 770px
+}
+.caption2 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 10pt; VISIBILITY: visible; PADDING-BOTTOM: 5px; MARGIN: 15px 0px 5px; COLOR: #ff6600; PADDING-TOP: 5px; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+.tabformat {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; BORDER-BOTTOM: #cccccc 1px solid
+}
+.tabhead {
+	BORDER-RIGHT: #000000 0pt solid; PADDING-RIGHT: 2px; BORDER-TOP: #000000 0pt solid; PADDING-LEFT: 10px; FONT-WEIGHT: bold; FONT-SIZE: 8pt; BACKGROUND: #227CA8; VISIBILITY: visible; PADDING-BOTTOM: 3px; BORDER-LEFT: #000000 0pt solid; COLOR:white; PADDING-TOP: 3px; BORDER-BOTTOM: #000000 0pt solid; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif; TEXT-ALIGN: center
+}
+
+.tabhead1 {
+	BORDER-RIGHT: #000000 0pt solid; PADDING-RIGHT: 2px; BORDER-TOP: #000000 0pt solid; PADDING-LEFT: 10px; FONT-WEIGHT: bold; FONT-SIZE: 8pt; BACKGROUND: #FFFFCC; VISIBILITY: visible; PADDING-BOTTOM: 3px; BORDER-LEFT: #000000 0pt solid; COLOR:#003366; PADDING-TOP: 3px; BORDER-BOTTOM: #000000 0pt solid; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif; TEXT-ALIGN: left
+	}
+
+
+
+.tabhead7 {
+	BORDER-RIGHT: #000000 0pt solid; PADDING-RIGHT: 2px; BORDER-TOP: #000000 0pt solid; PADDING-LEFT: 10px; FONT-WEIGHT: bold; FONT-SIZE: 8pt; BACKGROUND: #FFFFCC; VISIBILITY: visible; PADDING-BOTTOM: 3px; BORDER-LEFT: #000000 0pt solid; COLOR:Green; PADDING-TOP: 3px; BORDER-BOTTOM: #000000 0pt solid; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif; TEXT-ALIGN: left
+	}
+
+
+
+.tabhead3 {
+	BORDER-RIGHT: #000000 0pt solid; PADDING-RIGHT: 2px; BORDER-TOP: #000000 0pt solid; PADDING-LEFT: 10px; FONT-WEIGHT: bold; FONT-SIZE: 8pt; BACKGROUND: #000077; VISIBILITY: visible; PADDING-BOTTOM: 3px; BORDER-LEFT: #000000 0pt solid; COLOR:white; PADDING-TOP: 3px; BORDER-BOTTOM: #000000 0pt solid; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif; TEXT-ALIGN: left
+	}
+
+
+
+.tabdata {
+	BORDER-RIGHT: #000000 0pt solid; PADDING-RIGHT: 2px; BORDER-TOP: #000000 0pt solid; PADDING-LEFT: 10px; FONT-WEIGHT: bold; FONT-SIZE: 7pt; BACKGROUND: #227CA8; VISIBILITY: visible; PADDING-BOTTOM: 3px; BORDER-LEFT: #000000 0pt solid;PADDING-TOP: 3px; BORDER-BOTTOM: #000000 0pt solid; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif; TEXT-ALIGN: center
+}
+.titleLeft {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0pt; BACKGROUND: #000066; VISIBILITY: visible; PADDING-BOTTOM: 0px; MARGIN: auto; VERTICAL-ALIGN: middle; WIDTH: 100%; COLOR: white; LINE-HEIGHT: 32px; PADDING-TOP: 0px; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+.titleLeft1 {
+	FONT-SIZE: 12pt; COLOR: white; PADDING-TOP: 6px; HEIGHT: 32px; TEXT-ALIGN: center
+}
+.titleLeft2 {
+	DISPLAY: none; FONT-SIZE: 10pt; COLOR: white; TEXT-ALIGN: center
+}
+.topLeft {
+	BACKGROUND: #dcebff; HEIGHT: 100%
+}
+.topMenuLeft {
+	
+}
+.topMenuLeft A {
+	PADDING-RIGHT: 6pt; BORDER-TOP: #ffffff 1px solid; DISPLAY: block; PADDING-LEFT: 6pt; FONT-SIZE: 8pt; BACKGROUND: #ebebeb; VERTICAL-ALIGN: middle; COLOR: #000000; LINE-HEIGHT: 20px; WHITE-SPACE: nowrap; HEIGHT: 20px; TEXT-DECORATION: none
+}
+.topMenuLeft A:hover {
+	BACKGROUND: url(Img/topBg.png) left top; COLOR: black
+}
+.selectedLeft {
+	BORDER-TOP: #ffffff 1px solid; DISPLAY: block; PADDING-LEFT: 6px; FONT-WEIGHT: bold; FONT-SIZE: 8pt; BACKGROUND: white; VERTICAL-ALIGN: middle; WIDTH: 194px; COLOR: #ff6600; LINE-HEIGHT: 20px; TEXT-DECORATION: none
+}
+.leftPageLeft {
+	BACKGROUND: #dcebff
+}
+
+

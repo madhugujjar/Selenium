@@ -1,0 +1,56 @@
+// Decompiled by Jad v1.5.8e2. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://kpdus.tripod.com/jad.html
+// Decompiler options: packimports(3) 
+// Source File Name:   UserLogin.java
+
+import java.io.*;
+import java.sql.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
+
+public class UserLogin extends HttpServlet
+{
+
+    public UserLogin()
+    {
+    }
+
+    public void service(HttpServletRequest req, HttpServletResponse resp)
+        throws ServletException, IOException
+    {
+        PrintWriter out = resp.getWriter();
+        ServletContext sct = getServletConfig().getServletContext();
+        RequestDispatcher disp = sct.getNamedDispatcher("Loginvalidation");
+        resp.setContentType("text/html");
+        try
+        {Class.forName("oracle.jdbc.driver.OracleDriver");
+		con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE","project","project");
+            HttpSession session = req.getSession();
+            session.setAttribute("CONNECTION", con);
+            stmt = con.createStatement();
+            userid = req.getParameter("userid");
+            passwd = req.getParameter("pass");
+            String query = (new StringBuilder("select *from Login_Form where username='")).append(userid).append("'and password='").append(passwd).append("'").toString();
+            rs = stmt.executeQuery(query);
+            if(rs.next())
+            {
+                disp.forward(req, resp);
+            } else
+            {
+                out.println("<center><font color=black><h3><i><br><br>Please Enter Currect UserId/Password</i></h3></font></center>");
+                resp.setHeader("refresh", "4;url=./LoginForm.jsp");
+            }
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+            System.out.println(e.getMessage());
+        }
+    }
+
+    Connection con;
+    Statement stmt;
+    ResultSet rs;
+    String userid;
+    String passwd;
+}
